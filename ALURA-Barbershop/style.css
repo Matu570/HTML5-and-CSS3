@@ -1,10 +1,12 @@
-body{
-    text-align: center;
-    background-color: #CCCCCC;
-}
-
 .img-banner{
     width: 100%;
+    text-align: center;
+}
+
+.contents{
+    text-align: center;
+    background-color: #CCCCCC;
+    padding: 20px;
 }
 
 h1{
@@ -17,4 +19,28 @@ h1{
 
 em strong{
     color:red;
+}
+
+.differentials{
+    background-color: white;
+    padding: 30px;
+}
+
+h2{
+    text-align: center;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.items{
+    font-style: italic;
+}
+
+.img-differentials{
+    width: 50%;
 }
