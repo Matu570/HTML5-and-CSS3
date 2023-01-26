@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="contact.css">
     <title>Conctac Alura Barbershop</title>
 </head>
+
 <body>
     <header>
         <div class="div-header">
@@ -37,13 +39,34 @@
             <label for="tel">Phone number</label>
             <input type="tel" name="tel" id="tel">
 
+            <label for="msg">Message</label>
+            <textarea name="message" id="msg" cols="70" rows="10"></textarea>
+
+            <div>
+                <p>How would you like us to contact you?</p>
+
+                <label for="contact-email">Email</label>
+                <input type="radio" name="contact" id="contact-email" value="email">
+
+                <label for="contact-phone">Phone</label>
+                <input type="radio" name="contact" id="contact-phone" value=phone">
+
+                <label for="contact-whatsapp">Whatsapp</label>
+                <input type="radio" name="contact" id="contact-whatsapp" value="whatsapp">
+            </div>
+            <label for="info">Do you want to receive news from the alura barbershop?<input type="checkbox" name="info" id="info"></label>
+            
+
             <input type="submit" value="Submit">
+
+
         </form>
     </main>
     <footer>
         <img src="img/products/logo-blanco.png" alt="Alura's logo">
         <p class="copyright">&#169; Copyright Alura Barbershop - 2023</p>
     </footer>
-    
+
 </body>
+
 </html>
