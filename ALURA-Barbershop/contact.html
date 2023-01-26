@@ -31,31 +31,43 @@
     <main>
         <form>
             <label for="name">Name and lastname</label>
-            <input type="text" name="name" id="name">
+            <input class="block" type="text" name="name" id="name">
 
             <label for="mail">Email</label>
-            <input type="email" name="mail" id="mail">
+            <input class="block" type="email" name="mail" id="mail">
 
             <label for="tel">Phone number</label>
-            <input type="tel" name="tel" id="tel">
+            <input class="block" type="tel" name="tel" id="tel">
 
             <label for="msg">Message</label>
-            <textarea name="message" id="msg" cols="70" rows="10"></textarea>
+            <textarea class="block" name="message" id="msg" cols="70" rows="10"></textarea>
 
             <div>
                 <p>How would you like us to contact you?</p>
 
-                <label for="contact-email">Email</label>
-                <input type="radio" name="contact" id="contact-email" value="email">
+                <label for="contact-email"><input type="radio" name="contact" id="contact-email"
+                        value="email">Email</label>
 
-                <label for="contact-phone">Phone</label>
-                <input type="radio" name="contact" id="contact-phone" value=phone">
+                <label for="contact-phone"><input type="radio" name="contact" id="contact-phone"
+                        value=phone">Phone</label>
 
-                <label for="contact-whatsapp">Whatsapp</label>
-                <input type="radio" name="contact" id="contact-whatsapp" value="whatsapp">
+                <label for="contact-whatsapp"><input type="radio" name="contact" id="contact-whatsapp"
+                        value="whatsapp">Whatsapp</label>
+
             </div>
-            <label for="info">Do you want to receive news from the alura barbershop?<input type="checkbox" name="info" id="info"></label>
-            
+
+            <div>
+                <p>At what time do you prefer that we contact you?</p>
+                <select name="" id="">
+                    <option value="">Morning</option>
+                    <option value="">Afternoon</option>
+                    <option value="">Night</option>
+                </select>
+            </div>
+
+            <label class="checkbox" for="info">Do you want to receive news from the alura barbershop?<input
+                    type="checkbox" name="info" id="info"></label>
+
 
             <input type="submit" value="Submit">
 
