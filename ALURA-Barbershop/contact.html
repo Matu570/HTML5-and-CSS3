@@ -31,48 +31,74 @@
     <main>
         <form>
             <label for="name">Name and lastname</label>
-            <input class="block" type="text" name="name" id="name">
+            <input class="block" type="text" name="name" id="name" required>
 
             <label for="mail">Email</label>
-            <input class="block" type="email" name="mail" id="mail">
+            <input placeholder="email@example.com" class="block" type="email" name="mail" id="mail" required>
 
             <label for="tel">Phone number</label>
-            <input class="block" type="tel" name="tel" id="tel">
+            <input placeholder="(XX) XXXX-XXXX" class="block" type="tel" name="tel" id="tel" required>
 
             <label for="msg">Message</label>
-            <textarea class="block" name="message" id="msg" cols="70" rows="10"></textarea>
+            <textarea class="block" required name="message" id="msg" cols="70" rows="10"></textarea>
 
-            <div>
-                <p>How would you like us to contact you?</p>
+            <fieldset>
+                <legend>How would you like us to contact you?</legend>
 
                 <label for="contact-email"><input type="radio" name="contact" id="contact-email"
                         value="email">Email</label>
 
                 <label for="contact-phone"><input type="radio" name="contact" id="contact-phone"
-                        value=phone">Phone</label>
+                        value="phone">Phone</label>
 
-                <label for="contact-whatsapp"><input type="radio" name="contact" id="contact-whatsapp"
+                <label for="contact-whatsapp"><input checked type="radio" name="contact" id="contact-whatsapp"
                         value="whatsapp">Whatsapp</label>
 
-            </div>
+            </fieldset>
 
-            <div>
-                <p>At what time do you prefer that we contact you?</p>
-                <select name="" id="">
-                    <option value="">Morning</option>
-                    <option value="">Afternoon</option>
-                    <option value="">Night</option>
+            <fieldset>
+                <legend>At what time do you prefer that we contact you?</legend>
+                <select>
+                    <option>Morning</option>
+                    <option>Afternoon</option>
+                    <option>Night</option>
                 </select>
-            </div>
+            </fieldset>
 
-            <label class="checkbox" for="info">Do you want to receive news from the alura barbershop?<input
+            <label class="checkbox" for="info">Do you want to receive news from the alura barbershop?<input checked
                     type="checkbox" name="info" id="info"></label>
 
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" class="submit">
 
 
         </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Hour</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>08-20</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>08-20</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>08-20</td>
+                </tr>
+            </tbody>
+
+        </table>
+
     </main>
     <footer>
         <img src="img/products/logo-blanco.png" alt="Alura's logo">
